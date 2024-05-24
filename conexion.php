@@ -2,10 +2,10 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$database = "aerolinea";
+$database = "aviones_vuelos";
 
-$conexion = new mysqli($host, $user, $password, $database);
+$conn = new mysqli($host, $user, $password, $database);
 
-if ($conexion->connect_error) {
+if ($conn->connect_error) {
     die("Error de conexión: " . $conexion->connect_error);
 }
